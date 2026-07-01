@@ -44,6 +44,6 @@ Five sub-circuits:
 
 ---
 
-## Firmware (in progress)
+###### Firmware (in progress)
 
 ---
