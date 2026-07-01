@@ -1,6 +1,6 @@
 # PCB Business Card
 
-A credit-card sized custom PCB that doubles as a contact card and an interactive embedded demo. Designed from scratch — no dev board, no modules, bare chip bring-up on a custom 2-layer board.
+A creditcard sized custom PCB that doubles as a contact card and an interactive embedded demo. Designed from scratch, No dev board, no modules, bare chip bring up on a custom 2 layer board.
 
 ---
 
@@ -23,7 +23,7 @@ A credit-card sized custom PCB that doubles as a contact card and an interactive
 | Display | 8×8 red LED matrix (0603 LEDs) | Output display |
 | Accelerometer | IIS2DLPC (LGA-12) | 3-axis tilt sensing over I²C |
 | Charger | TP4056 (SOP-8) | LiPo charging via USB-C |
-| Regulator | MCP1700-3.3 | 3.3V LDO from LiPo |
+| Regulator | MCP1700 | 3.3V LDO from LiPo |
 | Power | 3.7V 1500mAh LiPo | Battery |
 | Input | SMD tactile switch (3×6mm) | Game button |
 | Connector | USB-C (16-pin SMD) | Charging input |
@@ -38,8 +38,8 @@ A credit-card sized custom PCB that doubles as a contact card and an interactive
 Five sub-circuits:
 - **Power** — USB-C → TP4056 → LiPo → MCP1700 → 3.3V rail
 - **MCU** — STM32G071RB with decoupling, BOOT0 pull-down, SWD pads
-- **LED matrix** — MAX7219 driven over SPI, 64× 0603 red LEDs in 8×8 grid
-- **Accelerometer** — IIS2DLPC over I²C with pull-ups, interrupt lines to MCU
+- **LED matrix** — MAX7219 driven over SPI, 64× 0603 LEDs in 8×8 grid
+- **Accelerometer** — IIS2DLPC over I²C with additional INT1 interrupt line to MCU
 - **Input** — Tactile button + 4-pad SWD debug port
 
 ---
