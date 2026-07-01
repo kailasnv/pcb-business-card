@@ -1,0 +1,27 @@
+# Editor local history
+.history/
+
+# KiCad auto-save and backups
+*.kicad_sch-bak
+*.kicad_pcb-bak
+*.bak
+*~
+_autosave-*
+
+# KiCad local config (machine-specific, differs per developer)
+fp-lib-table
+sym-lib-table
+
+# KiCad project local settings
+*.kicad_prl
+
+# KiCad intermediate output files (not fabrication deliverables)
+*.rpt
+*.tmp
+*.log
+report.txt
+
+
+# OS junk
+.DS_Store
+Thumbs.db
